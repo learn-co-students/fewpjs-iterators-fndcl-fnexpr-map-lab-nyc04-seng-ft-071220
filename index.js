@@ -12,5 +12,19 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  return tutorials
+
+  let f_array = tutorials.map(str => {
+    let new_array = str.split(' ').map(word => {
+      return word[0].toUpperCase() + word.slice(1)
+    })
+    return new_array.join(' ')
+  })
+
+  return f_array
 }
+
+//iterate through the array, grab each string elements
+  //split the string into another array of elements
+      //iterate through the array and find the first character of that word.
+                //uppercase that character.
+
